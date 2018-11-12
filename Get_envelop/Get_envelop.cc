@@ -12,9 +12,15 @@ void Get_envelop(vector<double> values,double &min, double &max){
   
   for(size_t i = 0; i < values.size(); i++){
     double value=values[i];
-    if(maximum < value) maximum=value;
-    if(minimum > value) minimum=value;
-     
+    if(maximum < value){
+      maximum=value;
+      //  cout<<"index of maximum="<<i<<endl;
+    }
+    if(minimum > value){
+      minimum=value;
+      //cout<<"index of minimum="<<i<<endl;
+
+    }     
 
   }
 
